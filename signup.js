@@ -6,7 +6,7 @@ const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
-const formIncription = document.getElementById("formulaireInscription");
+const formInscription = document.getElementById("formulaireInscription");
 
 inputNom.addEventListener("keyup", validateFrom);
 inputPreNom.addEventListener("keyup", validateFrom);
@@ -91,7 +91,7 @@ function validateRequired(input){
 }
 
 function InscrireUtilisateur(){
-    let dataForm = new FormData(formIncription);
+    let dataForm = new FormData(formInscription);
 
     let myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
